@@ -1,0 +1,29 @@
+//Grid
+
+$col_width: ($width - $gridGutterWidth * ($columns - 1)) / $columns;
+$col_total_width: $col_width + $gridGutterWidth;
+
+@mixin col($n: 1) {
+  float: left;
+  @include buildColumn($n); }
+
+@mixin last {
+  margin-right: 0; }
+
+@mixin buildColumn($n: 1) {
+  width: $n * $col_width + ($n - 1) * $gridGutterWidth;
+  @if $n == 1 {
+    @include last; }
+  @if $n == columns {
+    @include last; }
+  @else {
+    margin-right: $gridGutterWidth; } }
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    @include col($i);
+    &:last-child {
+      @include last; } } }
+
+.last {
+  margin-right: 0 !important; }

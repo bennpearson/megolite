@@ -1,0 +1,40 @@
+/********************************************
+*
+* Main Structure
+*
+********************************************/
+
+::selection {
+  background: $highlight-color; /* Safari */
+}
+::-moz-selection {
+  background: $highlight-color; /* Firefox */
+}
+
+html {
+  background: #ffffff;
+  margin: $gridGutterWidth;
+  text-rendering: optimizelegibility;
+  .fade {
+    background: red;
+    @include transition(background-color, 5s)
+  }
+}
+
+#content {
+  @include column(9, $first-child: true);
+}
+
+#generic-page {
+  #content {
+    @include column(9, $last-child: true);
+  }
+  #sidebar {
+    @include column(3, $first-child: true);
+  }
+}
+
+#page-header {
+  padding-bottom: $baseline * 1;
+  margin-bottom: $baseline * 1;
+}
