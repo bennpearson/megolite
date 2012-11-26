@@ -1,0 +1,183 @@
+<h1>The Kitchen Sink</h1>
+<!-- / Basic Typography -->
+<section class='typography'>
+  <h2>Basic Typography</h2>
+  <p>
+    This page demonstrates the styleguide implementation, covering all typographical elements that a typical website will contain.
+  </p>
+  <blockquote>
+    <p>“Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.”</p>
+  </blockquote>
+  <h1>This is a H1</h1>
+  <h2>This is a H2</h2>
+  <h3>This is a H3</h3>
+  <h4>This is a H4</h4>
+  <h5>This is a H5</h5>
+  <h6>This is a H6</h6>
+  <p>
+    A small paragraph to
+    <em>emphasis</em>
+    and show
+    <strong>important</strong>
+    bits.
+  </p>
+</section>
+<hr />
+<section class='lists'>
+  <hgroup>
+    <h2>Some List Type Stuff</h2>
+    <h3>With a sub-title, in a hgroup</h3>
+  </hgroup>
+  <h4>This is an unordered list</h4>
+  <ul>
+    <li>This is a list item</li>
+    <li>So is this - there could be more</li>
+    <li>
+      Make sure to style list items to:
+      <ul>
+        <li>Not forgetting child list items</li>
+        <li>Not forgetting child list items</li>
+        <li>Not forgetting child list items</li>
+        <li>Not forgetting child list items</li>
+      </ul>
+    </li>
+    <li>A couple more</li>
+    <li>top level list items</li>
+  </ul>
+  <h4>This is an ordered list</h4>
+  <ol>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>
+      Aliquam tincidunt mauris eu risus.
+      <ol>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+      </ol>
+    </li>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>
+      Aliquam tincidunt mauris eu risus.
+    </li>
+  </ol>
+  <h4>
+    This is a Definition List
+  </h4>
+  <dl>
+    <dt>Definition list</dt>
+    <dd>
+      Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </dd>
+    <dt>Lorem ipsum dolor sit amet</dt>
+    <dd>
+      Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </dd>
+  </dl>
+</section>
+<hr />
+<section class='tables'>
+  <header>
+    <h2>This bit is all about tables!</h2>
+  </header>
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  <table>
+    <caption>
+      Table caption goes here, if required.
+    </caption>
+    <thead>
+      <tr>
+        <td></td>
+        <th scope='col'>Heading 1</th>
+        <th scope='col'>Heading 2</th>
+        <th scope='col'>Heading 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope='row'>table data</td>
+        <td>table data</td>
+        <td>table data</td>
+        <td>table data</td>
+      </tr>
+      <tr>
+        <td scope='row'>table data</td>
+        <td>table data</td>
+        <td>table data</td>
+        <td>table data</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td scope='row'>table data</td>
+        <td>table data</td>
+        <td>table data</td>
+        <td>table data</td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  <hr />
+</section>
+<section class='forms'>
+  <h2>
+    Here's some form elements
+  </h2>
+  <form action='#' method='post'>
+    <div>
+      <div class='field text-input'>
+        <label for='name'>Text Input:</label>
+        <input id='name' name='name' type='text' value='' />
+      </div>
+    </div>
+    <div>
+      <h3>Radio Buttons</h3>
+      <div class='field radio-button'>
+        <input id='radio-choice-1' name='radio-choice-1' type='radio' value='choice-1' />
+        <label for='radio-choice-1'>Choice 1</label>
+      </div>
+      <div class='field radio-button'>
+        <input id='radio-choice-2' name='radio-choice-1' type='radio' value='choice-2' />
+        <label for='radio-choice-2'>Choice 2</label>
+      </div>
+    </div>
+    <div>
+      <h3>
+        Dropdown Menu
+      </h3>
+      <div class='field select-option'>
+        <label for='select-choice'>Select Dropdown Choice:</label>
+        <select id='select-choice' name='select-choice'>
+          <option value='Choice 1'>Choice 1</option>
+          <option value='Choice 2'>Choice 2</option>
+          <option value='Choice 3'>Choice 3</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <h3>Textarea</h3>
+      <div class='field textarea'>
+        <label for='textarea'>Textarea:</label>
+        <textarea cols='40' name='textarea' rows='8'></textarea>
+      </div>
+    </div>
+    <div>
+      <h3>Checkbox</h3>
+      <div class='field checkbox'>
+        <input id='checkbox' name='checkbox' type='checkbox' />
+        <label for='checkbox'>Checkbox:</label>
+      </div>
+      <input class='button' type='submit' value='Submit' />
+    </div>
+  </form>
+  <a class='button'>A Button For Clicking</a>
+  <br />
+  <a class='button-small'>A Small Button</a>
+  <hr />
+</section>
+<section class='misc'>
+  <h2>Some random and miscellaneous stuff</h2>
+  <pre><code>#header h1 a&#x000A;    display: block;&#x000A;    width: 300px;&#x000A;    height: 80px;</code></pre>
+</section>
