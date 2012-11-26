@@ -1,4 +1,57 @@
-{% block content %} 
-	<h1>Visual Language</h1>     
-	<!-- TODO: Add some pages and content -->
-{% endblock %} 
+      {% block content %} 
+        <h1>Visual Language</h1>     
+
+        {% comment %}
+        "../includes/modules/widgets/contact-widget" 
+        "../includes/modules/cta/generic-cta" 
+        "../includes/modules/cta/cta-widget" 
+        "../includes/modules/cta/cta-list" 
+        "../includes/modules/blog/blog-subscribe-widget" 
+        "../includes/modules/search/mini-search" 
+        "../includes/modules/blog/blog-categories-widget" 
+        "../includes/modules/blog/blog-archives-widget" 
+        "../includes/modules/social/flickr-photostream-widget" 
+        "../includes/modules/social/flickr-photostream-widget" 
+        "../includes/modules/social/flickr-photostream" 
+        "../includes/modules/case-study" 
+        "../includes/modules/gallery" 
+        "../includes/modules/news/news-item" 
+        "../includes/modules/events/event-item" 
+        {% endcomment %}
+        
+        {% include "../includes/modules/case-study" %}
+        {% include "../includes/modules/contact-form" %}
+        {% include "../includes/modules/login-form" %} 
+        {% include "../includes/modules/pagination" %} 
+        {% include "../includes/modules/password-reset" %}
+        {% include "../includes/modules/video" %} 
+        {% include "../includes/modules/blog/blog-archives-widget" %}
+        {% include "../includes/modules/blog/blog-article-snippet" %}
+        {% include "../includes/modules/blog/blog-categories-widget" %}
+        {% include "../includes/modules/blog/blog-post-CTA" %}
+        {% include "../includes/modules/blog/blog-subscribe-widget" %}
+        {% include "../includes/modules/cta/cta-list" %}
+        {% include "../includes/modules/cta/cta-simple" %}
+        {% include "../includes/modules/cta/cta-subscribe-widget" %}
+        {% include "../includes/modules/cta/cta-widget" %}
+        {% include "../includes/modules/cta/generic-cta" %}
+        {% include "../includes/modules/events/events-listing" %}
+        {% include "../includes/modules/events/events-widget" %}
+        {% include "../includes/modules/nav/breadcrumbs" %}
+        {% include "../includes/modules/nav/nav" %}
+        {% include "../includes/modules/nav/pagination" %}
+        {% include "../includes/modules/nav/secondary-nav" %}
+        {% include "../includes/modules/news/news-listing" %}
+        {% include "../includes/modules/news/news-widget" %}
+        {% include "../includes/modules/search/search-filter" %}
+        {% include "../includes/modules/search/search-item" %}
+        {% include "../includes/modules/search/search-media-type" %}
+        {% include "../includes/modules/search/site-search" %}
+        {% include "../includes/modules/social/facebook-stats" %}
+        {% include "../includes/modules/social/facebook" %}
+        {% include "../includes/modules/social/social-share" %}
+        {% include "../includes/modules/social/twitter" %}
+        {% include "../includes/modules/widgets/contact-widget" %}
+        {% include "../includes/modules/carousel" %}
+
+      {% endblock %} 
